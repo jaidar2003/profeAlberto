@@ -1,4 +1,4 @@
-from Pantalla import Pantalla
+from pantalla import Pantalla
 
 # Observador concretos
 class PantallaReloj(Pantalla):
