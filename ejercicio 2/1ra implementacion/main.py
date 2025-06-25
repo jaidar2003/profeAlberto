@@ -30,7 +30,7 @@ def main():
     print(f"País: {argentina.nombre}, Capital: {argentina.capital}")
     for provincia in argentina.provincias:
         print(f"  Provincia: {provincia.nombre}, Capital: {provincia.capital}")
-        for ciudad in provincia.ciudades:
+        for ciudad in provincia.provincias:
             print(f"    Ciudad: {ciudad.nombre}")
 
 

@@ -1,8 +1,10 @@
-from modelo.ciudad import Ciudad
-
-class ControladorCiudad:
-    def __init__(self):
-        self.ciudades = []
+class Ciudad:
+    def __init__(self, nombre, poblacion, impuestos, gasto_mantenimiento):
+        self.nombre = nombre
+        self.poblacion = poblacion
+        self.impuestos = impuestos  # Diccionario con imp1..imp5
+        self.gasto_mantenimiento = gasto_mantenimiento
+        self.provincia = None  # Referencia a la provincia padre
 
     def recaudacion_total(self):
         return sum(self.impuestos.values())
@@ -18,4 +20,3 @@ class ControladorCiudad:
     def __str__(self):
         provincia_info = f", Provincia: {self.provincia.nombre}" if self.provincia else ", Sin provincia"
         return f"{self.nombre} (Población: {self.poblacion}, Recaudación: {self.recaudacion_total()}, Gasto: {self.gasto_mantenimiento}, Déficit: {'Sí' if self.tiene_deficit() else 'No'}{provincia_info})"
-
