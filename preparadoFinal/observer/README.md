@@ -34,3 +34,14 @@ classDiagram
     Pantalla <|-- PantallaCelular
     Pantalla <|-- PantallaSmartWatch
 ```
+### 📐 Diagrama de Secuencia (Mermaid)
+
+```mermaid
+sequenceDiagram
+    participant Estacion as EstacionMeteorologica
+    participant Celular as PantallaCelular
+    participant Reloj as PantallaSmartWatch
+
+    Estacion->>Celular: actualizar(temp, hum, pres)
+    Estacion->>Reloj: actualizar(temp, hum, pres)
+```
