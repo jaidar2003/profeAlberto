@@ -4,10 +4,6 @@ from controlador.cursoControlador import ControladorCurso
 from controlador.inscripcionControlador import ControladorInscripcion
 from datetime import datetime
 
-class Persona:
-    def __init__(self, nombre, apellido):
-        self.nombre = nombre
-        self.apellido = apellido
 
 def main():
     ctrl_alumno = ControladorAlumno()
