@@ -6,7 +6,6 @@ class DetalleFacturaControlador:
     
     def crear_detalle(self, cantidad, producto):
         detalle = DetalleFactura(cantidad, producto)
-        # Calculate the subtotal in the controller
         detalle._subtotal = producto._precio * cantidad
         self.detalles.append(detalle)
         return detalle
