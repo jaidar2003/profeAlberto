@@ -1,4 +1,5 @@
-from modelos.ticket_venta import TicketVenta
+from modelos.ticket import TicketVenta
+from modelos.cliente import Cliente
 
 class RepresentanteController:
     def __init__(self, representante):

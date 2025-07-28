@@ -1,6 +1,9 @@
-# modelos/ticket_venta.py
 class TicketVenta:
-    def __init__(self, producto, cliente, fecha):
-        self.producto = producto
-        self.cliente = cliente
+    def __init__(self, fecha, producto, precio):
         self.fecha = fecha
+        self.producto = producto
+        self.precio = precio
+        self.cliente = None
+
+    def asignar_cliente(self, cliente):
+        self.cliente = cliente
